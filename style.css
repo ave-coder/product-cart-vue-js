@@ -1,0 +1,53 @@
+body {
+    margin: 0 auto;
+    font-family: 'tahoma';
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    border: 0.5px solid #d8d8d8;
+    width: 80%;
+    margin: 40px;
+}
+
+button {
+    width: 160px;
+    height: 50px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button {
+    background: linear-gradient(90deg, #180962, #8c6de3);
+    border: none;
+}
+
+.nav-bar {
+    background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+    height: 80px;
+}
+
+.product {
+    display: flex;
+}
+
+.product-image {
+    flex-basis: 700px;
+}
+
+.product-info {
+    margin-top: 15px;
+    flex-basis: 500px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
