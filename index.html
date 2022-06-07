@@ -28,11 +28,17 @@
                     <li v-for="detail in details">{{ detail }}</li>
                 </ul>
 
-                <div v-for="elem in elements" :key="elem.elemId">
-                    <p>{{ elem.elemColor }}</p>
+                <ul>
+                    <li v-for="elem in size">{{ elem }}</li>
+                </ul>
+
+                <div class="color">
+                    <div class="color-choose" v-for="elem in elements" :key="elem.elemId"
+                        :style="{ backgroundColor: elem.elemColor }" @mouseover="updateImage(elem.elemImg)"></div>
                 </div>
                 <div class="btn">
-                    <button @click="addCart">Добавить в корзину</button>
+                    <button @click="addCart" :disabled="!inStock" :class="{ disabledBtn: !inStock }">Добавить в
+                        корзину</button>
 
                     <div class="cart">
                         <p>Корзина: {{ cart }}</p>
